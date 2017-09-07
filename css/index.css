@@ -1,0 +1,704 @@
+.Container {
+  position: relative;
+  height: 100%;
+}
+.Container span {
+  color: #ff6f05;
+}
+.row {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .row1 .bc {
+    background: url(../img/bc_pic.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .row1 .bc {
+    background: url(../img/bc_pic.png) no-repeat 50% 50%;
+    background-size: cover;
+  }
+}
+.row1 {
+  background: #020202;
+}
+.row1.active .bc2 {
+  opacity: 1;
+  transition-delay: .3s;
+}
+.row1.active .bc {
+  opacity: 1;
+  height: 85%;
+  transition-delay: .3s;
+}
+.row1.active h3 {
+  transition-delay: .5s;
+  opacity: 1;
+  transform: scale(2, 2);
+}
+.row1.active h3 img {
+  transform: scale(0.5, 0.5);
+}
+.row1.active p {
+  opacity: 1;
+  transition-duration: 1s;
+  transition-delay: .3s;
+}
+.row1.active .btn {
+  opacity: 1;
+  top: 65%;
+  transform: scale(1.3, 1.3);
+  transition-duration: 1s;
+  transition-delay: .5s;
+  margin-top: 50px;
+}
+.row1 .bc {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all .7s;
+}
+.row1 .bc2 {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: radial-gradient(circle at top, #333 5%, #000 30%);
+  transition: all .7s;
+  opacity: 0;
+}
+.row1 h3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  opacity: 0;
+  width: 294px;
+  margin-left: -147px;
+  font-size: 30px;
+  color: white;
+  font-weight: 900;
+  transition: all .7s;
+}
+.row1 h3 img {
+  position: relative;
+  top: -50px;
+  left: 93%;
+}
+.row1 p {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  font-size: 250%;
+  color: white;
+  font-weight: 500;
+  transition: all .7s;
+}
+.row1 .btn {
+  cursor: pointer;
+  position: absolute;
+  width: 140px;
+  height: 35px;
+  top: 75%;
+  font-size: 100%;
+  font-weight: 700;
+  color: #453932;
+  left: 50%;
+  opacity: 0;
+  border-radius: 35px;
+  background: white;
+  margin-left: -70px;
+  transition: all .7s;
+}
+.row2,
+.row4,
+.row5 {
+  background: #2b2b2b;
+  color: white;
+}
+.row2.active h3,
+.row4.active h3,
+.row5.active h3 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row2.active samp,
+.row4.active samp,
+.row5.active samp {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row2.active .bc,
+.row4.active .bc,
+.row5.active .bc {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row2.active .bcg,
+.row4.active .bcg,
+.row5.active .bcg {
+  opacity: 1;
+  height: 100%;
+  top: 0%;
+}
+.row2.active .bcgod,
+.row4.active .bcgod,
+.row5.active .bcgod {
+  opacity: 1;
+  height: 100%;
+  top: 0%;
+}
+.row2.active h5,
+.row4.active h5,
+.row5.active h5 {
+  opacity: 1;
+  left: 12%;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row2.active h4,
+.row4.active h4,
+.row5.active h4 {
+  opacity: 1;
+  left: 12%;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row2.active p,
+.row4.active p,
+.row5.active p {
+  opacity: 1;
+  left: 12%;
+  transition-delay: .7s;
+}
+.row2.active .pic img,
+.row4.active .pic img,
+.row5.active .pic img {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row2.active .btn,
+.row4.active .btn,
+.row5.active .btn {
+  opacity: 1;
+  top: 20%;
+  transition-delay: .7s;
+}
+.row2.active .wom,
+.row4.active .wom,
+.row5.active .wom {
+  opacity: 1;
+  left: 50%;
+  transform: scale(1, 1);
+  box-shadow: -10px 10px 0 #2c2c2c, -20px 20px 0 #ff6f05;
+  transition-delay: .7s;
+}
+.row2.active .fruit img,
+.row4.active .fruit img,
+.row5.active .fruit img {
+  opacity: 1;
+  transform: scale(1, 1);
+  margin-top: 20px;
+  transition-delay: .7s;
+}
+.row2 .bc,
+.row4 .bc,
+.row5 .bc {
+  opacity: 0;
+  width: 100%;
+  transform: scale(1.5, 1.5);
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(circle, #777, #222);
+  transition: all 1.3s;
+}
+.row2 .bcg,
+.row4 .bcg,
+.row5 .bcg {
+  opacity: 1;
+  width: 100%;
+  height: 400%;
+  top: 0%;
+  position: absolute;
+  background: radial-gradient(circle, #777, #222);
+  transition: all 1.3s;
+}
+.row2 .bcgod,
+.row4 .bcgod,
+.row5 .bcgod {
+  opacity: 1;
+  width: 100%;
+  height: 400%;
+  top: -300%;
+  position: absolute;
+  background: radial-gradient(circle, #777, #222);
+  transition: all 1.3s;
+}
+.row2 h3,
+.row4 h3,
+.row5 h3 {
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: scale(0.3, 0.3);
+  font-size: 30px;
+  font-weight: 600;
+  transition: all 1s;
+}
+.row2 h3.row2_h3,
+.row4 h3.row2_h3,
+.row5 h3.row2_h3 {
+  width: 544px;
+  margin-left: -272px;
+}
+.row2 h3.row4_h3,
+.row4 h3.row4_h3,
+.row5 h3.row4_h3 {
+  width: 724px;
+  margin-left: -317px;
+}
+.row2 h3.row5_h3,
+.row4 h3.row5_h3,
+.row5 h3.row5_h3 {
+  width: 694px;
+  margin-left: -347px;
+}
+.row2 h3 img,
+.row4 h3 img,
+.row5 h3 img {
+  margin-right: 50px;
+}
+.row2 samp,
+.row4 samp,
+.row5 samp {
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: scale(0.3, 0.3);
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 200;
+  transition: all 1s;
+}
+.row2 samp.row2_samp,
+.row4 samp.row2_samp,
+.row5 samp.row2_samp {
+  width: 720px;
+  margin-left: -360px;
+}
+.row2 samp.row4_samp,
+.row4 samp.row4_samp,
+.row5 samp.row4_samp {
+  width: 760px;
+  margin-left: -380px;
+}
+.row2 samp.row5_samp,
+.row4 samp.row5_samp,
+.row5 samp.row5_samp {
+  width: 720px;
+  margin-left: -360px;
+}
+.row2 h5,
+.row4 h5,
+.row5 h5 {
+  opacity: 0;
+  position: absolute;
+  font-size: 30px;
+  transform: scale(0.5, 0.5);
+  top: 20%;
+  margin-top: 120px;
+  left: -12%;
+  font-weight: 800;
+  transition: all 1s;
+}
+.row2 h4,
+.row4 h4,
+.row5 h4 {
+  opacity: 0;
+  position: absolute;
+  transform: scale(0.8, 0.8);
+  font-size: 30px;
+  top: 20%;
+  left: -12%;
+  font-weight: 400;
+  margin-top: 180px;
+  transition: all 1s;
+}
+.row2 p,
+.row4 p,
+.row5 p {
+  opacity: 0;
+  position: absolute;
+  font-size: 20px;
+  top: 20%;
+  left: -12%;
+  font-weight: 100;
+  width: 450px;
+  margin-top: 240px;
+  transition: all 1s;
+}
+.row2 .pic,
+.row4 .pic,
+.row5 .pic {
+  position: absolute;
+  margin-top: 330px;
+  width: 450px;
+  top: 20%;
+  left: 12%;
+}
+.row2 .pic img,
+.row4 .pic img,
+.row5 .pic img {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+  transition: all 1s;
+  position: absolute;
+}
+.row2 .pic img:nth-child(2),
+.row4 .pic img:nth-child(2),
+.row5 .pic img:nth-child(2) {
+  left: 40%;
+}
+.row2 .pic img:nth-child(3),
+.row4 .pic img:nth-child(3),
+.row5 .pic img:nth-child(3) {
+  left: 75%;
+}
+.row2 .btn,
+.row4 .btn,
+.row5 .btn {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  width: 120px;
+  height: 35px;
+  border-radius: 35px;
+  left: 12%;
+  background: none;
+  color: #FF9900;
+  border: 1px solid greenyellow;
+  margin-top: 450px;
+  transition: all 1s;
+}
+.row2 .wom,
+.row4 .wom,
+.row5 .wom {
+  opacity: 0;
+  position: absolute;
+  transform: scale(0.5, 0.5);
+  top: 20%;
+  left: 80%;
+  margin-top: 120px;
+  margin-left: 100px;
+  border-radius: 60px;
+  transition: all 1s;
+}
+.row2 .fruit,
+.row4 .fruit,
+.row5 .fruit {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-top: 100px;
+}
+.row2 .fruit img,
+.row4 .fruit img,
+.row5 .fruit img {
+  opacity: 0;
+  transform: scale(0.8, 0.8);
+  transition: all 1s;
+  margin-top: 100px;
+}
+.row3 {
+  background: #2b2b2b;
+  color: white;
+}
+.row3.active h3 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row3.active samp {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row3.active .bc {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row3.active h5 {
+  opacity: 1;
+  left: 10%;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row3.active h4 {
+  opacity: 1;
+  left: 10%;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row3.active p {
+  opacity: 1;
+  left: 10%;
+  transition-delay: .7s;
+}
+.row3.active .pic img {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: .7s;
+}
+.row3.active .btn {
+  opacity: 1;
+  top: 20%;
+  transition-delay: .7s;
+}
+.row3.active .wom {
+  opacity: 1;
+  left: 10%;
+  box-shadow: -10px 10px 0 #2c2c2c, -20px 20px 0 #ff6f05;
+  transition-delay: .7s;
+}
+.row3 .bc {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2, 2);
+  position: absolute;
+  background: url(../img/dataRecord_bc.jpg) no-repeat;
+  background-size: cover;
+  transition: all 2s;
+}
+.row3 h3 {
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 604px;
+  transform: scale(0.3, 0.3);
+  margin-left: -302px;
+  font-size: 30px;
+  font-weight: 600;
+  transition: all 1.3s;
+}
+.row3 h3 img {
+  margin-right: 50px;
+}
+.row3 samp {
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: scale(0.3, 0.3);
+  width: 720px;
+  margin-top: 60px;
+  margin-left: -360px;
+  font-size: 20px;
+  font-weight: 200;
+  transition: all 1.3s;
+}
+.row3 h5 {
+  opacity: 0;
+  position: absolute;
+  width: 500px;
+  transform: scale(0.5, 0.5);
+  font-size: 30px;
+  top: 20%;
+  margin-top: 120px;
+  margin-left: 800px;
+  left: 35%;
+  font-weight: 800;
+  transition: all 1s;
+}
+.row3 h4 {
+  opacity: 0;
+  position: absolute;
+  font-size: 30px;
+  transform: scale(0.8, 0.8);
+  top: 20%;
+  left: 35%;
+  width: 500px;
+  margin-left: 800px;
+  font-weight: 400;
+  margin-top: 180px;
+  transition: all 1s;
+}
+.row3 p {
+  opacity: 0;
+  position: absolute;
+  font-size: 20px;
+  top: 20%;
+  left: 35%;
+  font-weight: 100;
+  width: 450px;
+  margin-left: 800px;
+  margin-top: 240px;
+  transition: all 1s;
+}
+.row3 .pic {
+  position: absolute;
+  margin-top: 330px;
+  width: 450px;
+  top: 20%;
+  left: 35%;
+  margin-left: 400px;
+}
+.row3 .pic img {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+  transition: all 1s;
+  position: absolute;
+}
+.row3 .pic img:nth-child(2) {
+  left: 40%;
+}
+.row3 .pic img:nth-child(3) {
+  left: 75%;
+}
+.row3 .btn {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  width: 120px;
+  height: 35px;
+  border-radius: 35px;
+  left: 35%;
+  margin-left: 710px;
+  background: none;
+  color: #FF9900;
+  border: 1px solid greenyellow;
+  margin-top: 450px;
+  transition: all 1s;
+}
+.row3 .wom {
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  margin-left: 180px;
+  margin-top: 120px;
+  border-radius: 60px;
+  transition: all 1s;
+}
+.row5.active .share_text {
+  opacity: 1;
+  transition-delay: .7s;
+}
+.row5.active .share {
+  opacity: 1;
+  transition-delay: .7s;
+}
+.row5.active .share.pic1 {
+  transform: translateX(-100%) translateY(-100%);
+}
+.row5.active .share.pic2 {
+  transform: translateY(-100%);
+}
+.row5.active .share.pic3 {
+  transform: translateY(-100%);
+}
+.row5.active .share.pic4 {
+  top: 30%;
+  transform: translateX(100%);
+}
+.row5.active .share.pic5 {
+  top: 65%;
+  transform: translateX(-100%);
+}
+.row5.active .share.pic6 {
+  top: 65%;
+  transform: translateX(100%);
+}
+.row5 .share {
+  position: absolute;
+  width: 25%;
+  height: 35%;
+  opacity: 0;
+  transition: all 1s;
+}
+.row5 .share:hover:after {
+  content: '锻炼之后，一身轻松。';
+  line-height: 500%;
+  text-indent: 28%;
+  width: 100%;
+  height: 100%;
+  background: url(../img/share_pic_bc.jpg.png) no-repeat;
+  background-size: 80%;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+.row5 .share.pic1 {
+  top: 65%;
+  margin-left: 25%;
+  background: url(../img/share_pic1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.row5 .share.pic2 {
+  top: 65%;
+  margin-left: 25%;
+  background: url(../img/share_pic2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.row5 .share.pic3 {
+  top: 65%;
+  margin-left: 50%;
+  background: url(../img/share_pic3.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.row5 .share.pic4 {
+  top: 65%;
+  margin-left: 50%;
+  background: url(../img/share_pic4.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.row5 .share.pic5 {
+  top: 65%;
+  margin-left: 25%;
+  background: url(../img/share_pic5.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.row5 .share.pic6 {
+  top: 65%;
+  margin-left: 50%;
+  background: url(../img/share_pic6.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.row5 .share_text {
+  position: absolute;
+  width: 50%;
+  height: 35%;
+  top: 65%;
+  left: 25%;
+  opacity: 0;
+  background: #FF6F05;
+  transition: all 1s;
+}
+.row5 .share_text h5 {
+  margin-top: 0;
+  left: 5%;
+}
+.row5 .share_text h4 {
+  margin-top: 50px;
+  left: 5%;
+}
+.row5 .share_text p {
+  margin-top: 100px;
+  left: 5%;
+}
+#canvas {
+  background: #262626;
+}
